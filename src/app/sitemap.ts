@@ -1,8 +1,12 @@
 import type { MetadataRoute } from "next"
 
-export const revalidate = false
-export const dynamic = "force-static"
-
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  return []
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    {
+      url: "https://ikrishan.com",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+  ]
 }

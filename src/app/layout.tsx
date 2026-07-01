@@ -42,6 +42,11 @@ export const metadata: Metadata = {
     default: `${USER.displayName} – ${USER.jobTitle}`,
   },
   description: SITE_INFO.description,
+  alternates: {
+    canonical: "/",
+  },
+  applicationName: SITE_INFO.name,
+  category: "technology",
   keywords: SITE_INFO.keywords,
   authors: [
     {
@@ -51,6 +56,8 @@ export const metadata: Metadata = {
   ],
   creator: "Krishan Kumar",
   openGraph: {
+    title: `${USER.displayName} – ${USER.jobTitle}`,
+    description: SITE_INFO.description,
     siteName: SITE_INFO.name,
     url: "/",
     type: "profile",
@@ -72,6 +79,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: X_HANDLE,
     creator: X_HANDLE,
+    title: `${USER.displayName} – ${USER.jobTitle}`,
+    description: SITE_INFO.description,
     images: [SITE_INFO.ogImage],
   },
   icons: {
